@@ -76,7 +76,7 @@ pub fn run() {
         let goodboy = s.mem[0x1194..0x1194+0x1c].to_vec();
         println!("goodboy {:x?}", goodboy);
 
-        // make the 1388 buffer
+        // make the rng numbers buffer
         generate_buffer(&mut s);
         let numbers = s.mem[0x1388..0x1388+38*2].to_vec();
         println!("numbers {:x?}", numbers);
